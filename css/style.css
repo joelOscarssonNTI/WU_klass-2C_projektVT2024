@@ -1,0 +1,170 @@
+body {
+    margin: 0;
+}
+
+  
+.landing_page {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+  
+.headline {
+    height: 40%;
+    margin: 100px;
+
+}
+  
+.sub-text {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    text-align: center;
+}
+  
+.button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    text-align: center;
+    text-decoration: none;
+    background-color: #a34caf;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+  
+.button:hover {
+    background-color: #97599f;
+}
+
+.hero {
+    text-align: center;
+    height: 100vh;
+}
+
+  
+.additional-content {
+    height: 80vh;
+    width: 100%;
+    margin-top: 100px; 
+    text-align: center;
+    background-color: black;
+}
+  
+.footer {
+  background-color: #363636;
+  color: #fff;
+  padding: 50px 0;
+  width: 100%;
+  animation: fadeInUp 1s ease-in-out;
+}
+  
+  .footer .container {
+    width: 1170px;
+    margin: 0 auto;
+  }
+  
+  .footer .row {
+    margin-bottom: 30px;
+  }
+  
+  .footer .col-md-4 {
+    padding: 0 15px;
+  }
+  
+  .footer .widget-title {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #fff;
+  }
+  
+  .footer .recent-posts li {
+    margin-bottom: 10px;
+  }
+  
+  .footer .recent-posts li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .footer .recent-posts li a:hover {
+    color: #ddd;
+  }
+  
+  .footer .contact-info li {
+    margin-bottom: 10px;
+  }
+  
+  .footer .contact-info li i {
+    color: #ddd;
+    margin-right: 10px;
+  }
+  
+  .footer .copyright {
+    text-align: center;
+    margin-top: 30px;
+    padding: 10px 0;
+    border-top: 1px solid #ddd;
+}
+
+
+
+
+#container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: baseline;
+    background-color: black;
+}
+
+#container canvas, #overlay {
+    position: absolute;
+}
+
+.scoreboard {
+    color: azure;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 100px;
+    user-select: none;
+    text-align: center;
+}
+
+.gameover {
+    display: contents;
+    padding: 10px;
+    background-color: white;
+    text-align: center;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .headline {
+        height: 20%;
+        margin-bottom: 50px;
+    }
+
+    .sub-text {
+        font-size: 1em;
+        margin-bottom: 20px;
+    }
+
+    .button {
+        padding: 10px 20px;
+        font-size: 1em;
+    }
+
+    .scoreboard {
+        font-size: 16px;
+        margin-bottom: 50px;
+    }
+}
