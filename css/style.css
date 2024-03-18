@@ -1,14 +1,9 @@
-body {
-    margin: 0;
-}
-
 .header {
   background-color: black;
   border-bottom: 2px solid #a34caf;
   display: grid;
   grid-template-columns: auto 1fr;
   align-items: center;
-  padding: 10px 20px;
 }
 
 .logo-container {
@@ -40,18 +35,11 @@ body {
   color: #a34caf;
 }
 
-
-
 .landing_page {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background: url('background.jpg') no-repeat center center fixed;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: white;
+  background-size: cover;
+  color: white;
+  padding: 50px 20px;
+  background-color: black;
 }
   
 .headline {
@@ -85,15 +73,20 @@ body {
 .hero {
   text-align: center;
   height: 80vh;
+  background: url('background.jpg') no-repeat center center;
+  border-bottom: #a34caf solid 2px;
 }
+
+
+
 
   
 .additional-content {
-    height: 80vh;
-    width: 100%;
-    margin-top: 100px; 
-    text-align: center;
-    background-color: black;
+  height: 80vh;
+  width: 100%;
+  margin-top: 100px; 
+  text-align: center;
+  background-color: black;
 }
 
 #our-games-button {
@@ -128,39 +121,39 @@ body {
   
   
 .footer .widget-title {
-    font-size: 18px;
-    margin-bottom: 15px;
-    color: #fff;
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #fff;
 }
   
 .footer .recent-posts li {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
   
 .footer .recent-posts li a {
-    color: #fff;
-    text-decoration: none;
-    transition: color 0.3s;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
 }
   
 .footer .recent-posts li a:hover {
-    color: #ddd;
+  color: #ddd;
 }
   
 .footer .contact-info li {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
   
-  .footer .contact-info li i {
-    color: #ddd;
-    margin-right: 10px;
-  }
+.footer .contact-info li i {
+   color: #ddd;
+   margin-right: 10px;
+}
   
-  .footer .copyright {
-    text-align: center;
-    margin-top: 30px;
-    padding: 10px 0;
-    border-top: 1px solid #ddd;
+.footer .copyright {
+  text-align: center;
+  margin-top: 30px;
+  padding: 10px 0;
+  border-top: 1px solid #ddd;
 }
 
 
@@ -214,23 +207,23 @@ body {
 }
 
 #container canvas, #overlay {
-    position: absolute;
+  position: absolute;
 }
 
 .scoreboard {
-    color: azure;
-    font-size: 20px;
-    margin-top: 10px;
-    margin-bottom: 100px;
-    user-select: none;
-    text-align: center;
+  color: azure;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 100px;
+  user-select: none;
+  text-align: center;
 }
 
 .gameover {
-    display: contents;
-    padding: 10px;
-    background-color: white;
-    text-align: center;
+  display: contents;
+  padding: 10px;
+  background-color: white;
+  text-align: center;
 }
 
 .catalog-page {
