@@ -1,3 +1,4 @@
+
 .header {
   background-color: black;
   border-bottom: 2px solid #a34caf;
@@ -36,7 +37,6 @@
 }
 
 .landing_page {
-  background-size: cover;
   color: white;
   padding: 50px 20px;
   background-color: black;
@@ -74,19 +74,17 @@
   text-align: center;
   height: 80vh;
   background: url('background.jpg') no-repeat center center;
+  background-size: 100%;
   border-bottom: #a34caf solid 2px;
 }
 
 
-
-
-  
 .additional-content {
-  height: 80vh;
+  height: 100vh;
   width: 100%;
-  margin-top: 100px; 
+  display: flex;
   text-align: center;
-  background-color: black;
+  justify-content: center;
 }
 
 #our-games-button {
@@ -157,16 +155,11 @@
 }
 
 
-.additional-content {
-  height: 110vh;
-  width: 100%;
-  margin-top: 100px; 
-  background-color: black;
+.content-container {
   display: grid;
   grid-template-columns: auto 1fr;
   gap: 20px;
 }
-
 
 .image-container {
   grid-column: 1;
@@ -185,6 +178,7 @@
   align-items: center;
   justify-content: center;
   margin-right: 30px;
+  max-width: 900px;
 }
 
 .text-container h2 {
@@ -282,4 +276,105 @@
 
 .game-link:hover {
   background-color: #97599f;
+}
+
+
+.contact-page {
+  background-color: black;
+  color: white;
+  padding: 50px 20px;
+}
+
+.contact-headline {
+  text-align: center;
+  font-size: 40px;
+}
+
+.contact-container {
+  margin: 0 auto;
+  max-width: 800px;
+  height: auto;
+}
+
+
+.contact-form {
+  background-color: #1f1f1f;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 30 px
+;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #333;
+  color: white;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.submit-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #a34caf;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #97599f;
+}
+
+.faq-container {
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 50px 20px;
+  background-color: black;
+  color: white;
+}
+
+.faq-headline {
+  text-align: center;
+  font-size: 40px;
+}
+
+.faq-item {
+  margin-bottom: 30px;
+}
+
+.question {
+  font-size: 24px;
+  color: #a34caf; /* Adjust color to match the accent color used in your contact form */
+  margin-bottom: 10px;
+}
+
+.answer {
+  font-size: 18px;
+  color: white;
+}
+
+/* Hover effect */
+.faq-item:hover {
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3); /* Adjust shadow color to match the background */
+  transform: translateY(-3px);
+  transition: all 0.3s ease;
 }
