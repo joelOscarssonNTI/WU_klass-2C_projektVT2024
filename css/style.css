@@ -78,17 +78,6 @@
 }
 
 
-
-
-  
-.additional-content {
-  height: 80vh;
-  width: 100%;
-  margin-top: 100px; 
-  text-align: center;
-  background-color: black;
-}
-
 #our-games-button {
   display: inline-block;
   padding: 15px 30px;
@@ -160,7 +149,7 @@
 .additional-content {
   height: 110vh;
   width: 100%;
-  margin-top: 100px; 
+
   background-color: black;
   display: grid;
   grid-template-columns: auto 1fr;
@@ -171,7 +160,7 @@
 .image-container {
   grid-column: 1;
   align-self: center;
-  margin: 30px;
+  margin: 40px;
 }
 
 .image-container img {
@@ -184,7 +173,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 30px;
+  margin-right: 40px;
 }
 
 .text-container h2 {
