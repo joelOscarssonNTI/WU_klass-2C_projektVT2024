@@ -58,6 +58,9 @@ h1 {
   background: url('background.jpg') no-repeat center center;
   background-size: 100%;
   border-bottom: #a34caf solid 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
   
 .headline {
@@ -113,16 +116,15 @@ h1 {
   color: #fff;
   padding: 50px 10px;
   width: 100%;
-  animation: fadeInUp 1s ease-in-out;
 }
   
 .footer .container {
-    width: 1170px;
-    margin: 0 auto;
+  width: 1170px;
+  margin: 0 auto;
 }
 
 .footer .row {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
   
 .footer .widget-title {
@@ -137,7 +139,6 @@ h1 {
   
 .footer .contact-info li i {
    color: #ddd;
-   margin-right: 10px;
 }
   
 .footer .copyright {
