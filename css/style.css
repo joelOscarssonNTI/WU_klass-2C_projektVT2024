@@ -13,6 +13,7 @@
 }
 
 .logo-container {
+  grid-column: 1;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -31,8 +32,10 @@ h1 {
 }
 
 .nav-links {
+  display: flex;
   grid-column: 2;
-  text-align: right;
+  flex-direction: row;
+  justify-content: right;
 }
 
 .nav-links a {
