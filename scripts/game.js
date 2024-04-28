@@ -235,3 +235,23 @@ startGameBtn.addEventListener('click', () => {
     spawnEnemies();
     modalEl.style.display = 'none';
 });
+
+// Select instructions modal and close button
+const instructionsModal = document.getElementById('instructionsModal');
+const closeBtn = document.getElementsByClassName('close')[0];
+const showInstructionsBtn = document.getElementById('showInstructionsBtn');
+
+// Display instructions modal when the page loads
+window.onload = function() {
+    instructionsModal.style.display = 'block';
+}
+
+// Close the instructions modal when the close button is clicked
+closeBtn.onclick = function() {
+    instructionsModal.style.display = 'none';
+}
+
+// Show instructions modal again when the "Show Instructions" button is clicked
+showInstructionsBtn.onclick = function() {
+    instructionsModal.style.display = 'block';
+}

@@ -8,10 +8,63 @@
 </head>
 <body id="container">
 
-    
     <canvas></canvas>
-    
-    <div  id="overlay">
+
+    <div id="instructionsModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="title">
+                <h2 class="headline-instructions">Welcome to BlastX!</h2>
+            </div>
+            <div class="instructions">
+                <h3 class="headline-instructions">Instructions</h3>
+                <ul class="instructions-list">
+                    <li>- Use your mouse to aim and click to shoot projectiles.</li>
+                    <li>- Destroy enemies to earn points.</li>
+                    <li>- Watch out for collisions with enemies!</li>
+                    <li>- Press the "Start Game" button to begin.</li>
+                </ul>
+            </div>
+            <div class="scoreboard">
+                <h3>Scoreboard</h3>
+                <table id="scoreboardTable">
+                    <tr>
+                        <th>Rank</th>
+                        <th>Player</th>
+                        <th>Score</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>GamerX</td>
+                        <td>96000</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>NinjaMaster</td>
+                        <td>6900</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>PixelWarrior</td>
+                        <td>2400</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>CyberPilot</td>
+                        <td>1400</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>GameKnight</td>
+                        <td>1200</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="overlay">
 
         <div class="scoreboard">
             <span>Score: </span><span id="scoreEl">0</span>
@@ -21,10 +74,11 @@
             <h1 id="bigScoreEl">0</h1>
             <p>Points</p> 
             <a id="startGameBtn" class="multi-button">Start Game</a>
+            <a id="showInstructionsBtn" class="multi-button">Show Instructions</a>
             <a class="multi-button" href="index.html">Back To Home Page</a>
         </div>
 
-    </div>  
+    </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="scripts/game.js"></script>
